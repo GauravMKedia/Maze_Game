@@ -55,3 +55,4 @@ The steps are :
 # Project Info
 - Project: Maze Generator & Solver
 - Author: Gaurav Kedia
+- Site Link: https://gauravmkedia.github.io/Maze_Game/
