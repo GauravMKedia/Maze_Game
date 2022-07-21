@@ -1,0 +1,83 @@
+/* Css for Input page */
+
+#contain{
+    z-index: 1;
+}
+
+.contain{
+    background-image:url(../Images/background_1.jpg);
+    display: grid;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+.data{
+    display: grid;
+    position: fixed;
+    grid-template-rows: 2fr 5fr;
+    justify-items: center;
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 45px;
+    background-color:rgb(84 158 155);
+    padding: 30px 10px 10px 10px;
+}
+
+.start_logo{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+.main_input{
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr;
+    justify-items: center;
+}
+
+.input_row,.input_column{
+    align-self: center;
+    padding: 10px;
+    text-align: center;
+}
+
+span,p{
+    font-size: xx-large;
+    font-weight:900;
+}
+
+#row,#column{
+    font-size: x-large;
+    width: 6vw;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+
+.start{
+    align-self: center;
+}
+
+#start{
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    font-size:xx-large;
+    font-weight: bolder;
+    border: 4px solid black;
+    border-radius: 15px;
+}
+
+/* Hover function */
+#row:hover,#column:hover{
+    cursor: pointer;
+    background-color: grey;
+}
+
+.contain .data .main_input #start:hover{
+    background-color: grey;
+    cursor: pointer;
+
+}

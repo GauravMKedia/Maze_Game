@@ -1,0 +1,57 @@
+/* Css for Algorithm, Re-generate and Solve button  */
+
+
+.nav_item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Css of Algorithm Choose Section */
+#Algo{    
+    flex: 5 3 auto;
+    align-self: flex-start;
+    width: 100%;
+    font-size: 22px;
+    font-weight: bolder;
+    display: block;
+    height: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .navbar .nav_item #algo{
+    font-size:15px;
+}
+
+.container .navbar .nav_item #algo:hover{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Css for Solve and Regenerate Button */
+.buttons{
+    flex: 3 2 auto;
+    margin: auto 58px auto 58px;
+}
+
+#generate,#solve{
+    border: 3px solid black;
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#generate:hover,#solve:hover{
+    background-color: rgb(224, 215, 215);
+    cursor: pointer;
+}

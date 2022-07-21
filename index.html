@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Game</title>
+
+    <!-- Scripts -->
+    <script src="./Scripts/Algo.js" defer></script>
+    <script src="./Scripts/Dfs_Algo.js" defer></script>
+    <script src="./Scripts/Bfs_Algo.js" defer></script>
+    <script src="./Scripts/Maze_Generator.js" defer></script>
+    <script src="./Scripts/work.js" defer></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./Styles/board.css">
+    <link rel="stylesheet" href="./Styles/Animate_btn.css">
+    <link rel="stylesheet" href="./Styles/logo.css">
+    <link rel="stylesheet" href="./Styles/Button.css">
+    <link rel="stylesheet" href="./Styles/input.css">
+
+</head>
+
+<body>
+    <!-- Input Page -->
+    <div class="contain" id="contain">
+        <!-- Id conatin is used for apply z-index and js -->
+        <div class="data">
+            
+            <!-- Logo section of input page -->
+            <div class="start_logo">
+                <img src="./Images/logo.jpg" alt="Logo">
+                <h2>Maze Game</h2>
+            </div>
+
+            <!-- Input section of input page -->
+            <div class="main_input">
+                <div class="input_row">
+                    <p>Enter Number of Rows Less than <span id="max_rows"></span> </p>
+                    <span>Enter number of Rows :</span> <input type="number" id="row">
+                </div>
+                <div class="input_column">
+                    <p>Enter Number of Columns Less than <span id="max_columns"></span> </p>
+                    <span>Enter number of Columns :</span> <input type="number" id="column">
+                </div>
+                <div class="start">
+                    <button id="start">Start</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Page -->
+    <div class="container" id='container'>  <!--Id is  used to apply js--> 
+        <!-- Navigation Section -->
+        <div class="navbar">
+
+            <!-- Logo of Navigation Section -->
+            <div class="logo">
+                <img src="./Images/logo.jpg" alt="Logo">
+                <h2> Maze Game </h2>
+            </div>
+
+            <!-- Buttons of Navigation Section -->
+            <div class="nav_item">
+
+                <!-- Choose Algorithm Button -->
+                <section title="inputs" id="Algo">
+                    <label for="Info">Choose Algorithm to Solve :</label>
+                    <select name="algos" id="algo">
+                        <option value="dfs" selected>Depth First Search</option>
+                        <option value="bfs">Breadth First Search</option>
+                    </select>
+                </section>
+
+                <!-- Regenerate Button -->
+                <section title="Buttons" class="buttons">
+                    <button id="generate">Re-Generate</button>
+                </section>
+                
+                <!-- Solve Button -->
+                <section title="Buttons" class="buttons">
+                    <button id="solve">Solve</button>
+                </section>
+                
+                <!-- Animation Button -->
+                <div class="animate">
+                    <h2>Animation ?</h2>
+                    <label class="switch">
+                        <input type="checkbox" id="switch" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Maze Board Section -->
+        <div class="board_wrap" id="board">
+            <div class="canvas">
+                <canvas class="maze"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

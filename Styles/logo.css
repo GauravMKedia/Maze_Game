@@ -1,0 +1,15 @@
+.logo{
+    display: block;
+    justify-self: left;
+    margin: 20px;
+    font-size: 0.7em;
+    text-align: left;
+    float: left;
+}
+.logo img{
+    display: block;
+    height: 80px;
+    width: 80px;
+    margin: auto;
+    align-items: center;
+}
